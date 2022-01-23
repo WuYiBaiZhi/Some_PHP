@@ -285,3 +285,25 @@
 //        echo $v['name'].' --- '.$v['school'];
 //        echo '<hr>';
 //    }
+
+    // 循环多维数组嵌套
+    $arr = [
+            [
+                'name' => '欧阳',
+                'school'  => 'PHP中文网'
+            ],
+            [
+                'name' => '西门',
+                'school'  => 'PHP中文网'
+            ],
+            [
+                'name' => '灭绝',
+                'school'  => 'PHP中文网'
+            ]
+        ];
+    foreach ($arr as $v) {
+        foreach ($v as $vv) {
+            echo $vv;
+            echo '<hr>';
+        }
+    };
